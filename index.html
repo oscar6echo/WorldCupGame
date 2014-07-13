@@ -3,11 +3,11 @@
 
 <head>
 	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
-	<title>Texas Hold'em Analysis</title>
+	<title>WorldCup Game clip</title>
 
 	<style>
-		h3 { text-align: center; },
-		#example_video_1 { margin: 0 auto; }
+		h3 { text-align: center; }
+		#container { margin: 0 auto; }
 	</style>
 	<link href="//vjs.zencdn.net/4.6/video-js.css" rel="stylesheet">
 	<script src="//vjs.zencdn.net/4.6/video.js"></script>
@@ -16,17 +16,20 @@
 
 <body>
 	<h3>HTML video embedded with <a href='http://www.videojs.com/'>videojs</a> </h3>
-	<video id="example_video_1"
-		class="video-js vjs-default-skin"
-		controls preload="auto"
-		width="1280" height="720"
-		poster="./clip/G0011624.JPG"
-		data-setup='{"example_option":true}'>
-		<source src="./clip/WorldCupGame_Clip_manual2.mp4" type='video/mp4' />
-		<!-- <source src="http://video-js.zencoder.com/oceans-clip.webm" type='video/webm' /> -->
-		<!-- <source src="http://video-js.zencoder.com/oceans-clip.ogv" type='video/ogg' /> -->
-		<p class="vjs-no-js">To view this video please enable JavaScript, and consider upgrading to a web browser that <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a></p>
-	</video>
+
+	<div id="container">
+		<video id="example_video_1"
+			class="video-js vjs-default-skin"
+			controls preload="auto"
+			width="1280" height="720"
+			poster="./clip/1-G0011624.JPG"
+			data-setup='{"example_option":true}'>
+			<source src="./clip/WorldCupGame_Clip_manual2.mp4" type='video/mp4' />
+			<!-- <source src="http://video-js.zencoder.com/oceans-clip.webm" type='video/webm' /> -->
+			<!-- <source src="http://video-js.zencoder.com/oceans-clip.ogv" type='video/ogg' /> -->
+			<p class="vjs-no-js">To view this video please enable JavaScript, and consider upgrading to a web browser that <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a></p>
+		</video>
+	</div>
 
 </body>
 
